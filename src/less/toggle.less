@@ -1,0 +1,64 @@
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 37px;
+  display: none;
+
+
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+
+
+}
+
+.toggle_element {
+
+  width: 20px;
+  height: 2px;
+
+  background: #000000;
+
+  border-radius: 2px;
+
+  transition: 1s;
+
+}
+
+.toggle_element:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+
+
+@media (max-width: 320px) {
+
+  .toggle {
+
+    display: block;
+  }
+
+}
+
+
+
+.toggle_element_move-1 {
+  transform: translateY(6px) rotate(45deg);
+
+}
+
+.toggle_element_move-2 {
+  opacity: 0;
+
+
+}
+
+.toggle_element_move-3 {
+  transform:  translateY(-6px) rotate(-45deg);
+
+}
+
+

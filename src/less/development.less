@@ -1,0 +1,78 @@
+.development {
+  display: flex;
+  flex-direction: column;
+
+  width: 243px;
+}
+
+.development_wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.development_title {
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+
+
+.development_text {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+}
+
+@media (max-width: 320px) {
+
+  .development {
+    display: block;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+
+    background-image: linear-gradient(to right,#000000, #000000 85%, #ffffff 95%, #ffffff );
+  }
+
+  .development_wrapper {
+    align-items: center;
+
+    background: #ffffff;
+
+  }
+
+  .development_title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.025em;
+  }
+
+  .development_text {
+    width: 600px;
+
+    font-size: 16px;
+    line-height: 21px;
+    mix-blend-mode: screen;
+
+    background: #ffffff;
+
+  }
+
+  .development_svg {
+    width: 32px;
+    height: 23px;
+  }
+
+}

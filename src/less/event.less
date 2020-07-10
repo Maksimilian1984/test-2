@@ -1,0 +1,112 @@
+.event {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 40px;
+  padding-bottom: 32px;
+
+  border: 1px solid #B1B3B6;
+
+}
+
+
+.event_title {
+  margin: 0;
+  padding: 0;
+
+
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #333333;
+}
+
+.event_png {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.event_date {
+  margin-top: auto;
+
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #828282;
+}
+.event_author {
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333333;
+
+}
+
+/* дополнительная точка*/
+
+@media (max-width: 800px) {
+  .event_title {
+    font-size: 28px;
+    line-height: 34px;
+
+  }
+
+  .event_png {
+    width: 90px;
+    height: 80px;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .event {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 96px;
+    padding-right: 0;
+    padding-bottom: 48px;
+
+    border: none;
+    border-bottom: 1px solid #B1B3B6;
+  }
+  .event_title {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .event_png {
+    top: 16px;
+    left: 0;
+
+    width: 80px;
+    height: 74px;
+  }
+
+  .event_date {
+    margin-right: 16px;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.025em;
+  }
+
+  .event_author {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+  }
+
+
+}
+

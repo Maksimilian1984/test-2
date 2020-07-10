@@ -1,0 +1,48 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo_title {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+}
+
+.logo_text {
+  margin: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 320px) {
+
+  .logo {
+    align-items: center;
+  }
+
+  .logo_svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo_title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  .logo_text {
+    display: none;
+  }
+
+}

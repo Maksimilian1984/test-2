@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  border-bottom: 1px solid #8E8E8E;
+}
+
+
+
+
+@media (max-width: 320px) {
+  .menu {
+    display: none;
+    position:absolute;
+    left: 0;
+    top: 69px;
+    z-index: 1;
+
+    width: 320px;
+
+
+    padding-top: 0;
+    padding-bottom: 22px;
+
+    border: none;
+
+    background: #ffffff;
+  }
+
+}
+
+
+.menu_visible {
+  display: block;
+}

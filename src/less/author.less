@@ -1,0 +1,89 @@
+.author {
+  display: flex;
+  flex-direction: column;
+
+  width: 243px;
+}
+.author_wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.author_title {
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+
+.author_text {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'RF Dewi';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.author_title_colon {
+  display: none;
+}
+
+@media (max-width: 320px) {
+
+  .author {
+    display: block;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+
+    background-image: linear-gradient(to right,#000000, #000000 85%, #ffffff 95%, #ffffff );
+
+  }
+
+  .author_text {
+    width: 600px;
+
+    font-size: 16px;
+    line-height: 21px;
+    mix-blend-mode: screen;
+
+    background: #ffffff;
+  }
+
+  .author_svg {
+    width: 32px;
+    height: 25px;
+
+    background: #ffffff;
+  }
+
+  .author_wrapper {
+    background: #ffffff;
+    align-items: center;
+  }
+
+  .author_title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.025em;
+
+  }
+
+  .author_title_colon {
+    display: inline;
+
+    font-family: 'RF Dewi';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+
+}
